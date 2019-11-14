@@ -11,6 +11,7 @@ html {
     grid-template-columns: 350px 2fr;
     grid-template-rows: 100px;
     grid-column-gap: 20px;}
+
     
     .header{
         display: grid;
@@ -24,6 +25,19 @@ html {
         display: grid;
         grid-template-rows: 150px;
         justify-items: center;
+        align-items: center;
         
     }
+    .nav{
+        display: grid;
+        justify-items: center;
+        align-items: center;
+    }
+    .search{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 100px;
+
     
+    }
+   
