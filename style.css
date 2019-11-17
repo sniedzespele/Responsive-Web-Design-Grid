@@ -167,7 +167,7 @@ display: none;
         "image image action";
         grid-gap: 10px;
         grid-template-columns:3fr 2fr;
-        ;}
+        }
         .main{
             border:2px solid #386c79;
             grid-area: main;
