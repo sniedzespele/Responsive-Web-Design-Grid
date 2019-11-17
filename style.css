@@ -41,6 +41,11 @@ body{
     padding:  25px 0;
     grid-area: brand;
 }
+.logo{
+    display: block;
+    max-width: 20%;
+    justify-self: center;
+}
 .nav{
     border:2px solid #386c79;
     padding:  25px 0;
@@ -128,7 +133,7 @@ display: none;
     .wrapper{
         display: grid;
         grid-template-columns: repeat(3, 1fr);
-        grid-template-rows: repeat(2, 1fr);
+        grid-template-rows:1fr;
         grid-template-areas: 
         "header header header"
         "hero hero hero"
@@ -194,7 +199,7 @@ display: none;
     .wrapper{
         display: grid;
         grid-template-columns: repeat(3, 1fr);
-        grid-template-rows: repeat(2, 1fr);
+        grid-template-rows:1fr;
         grid-template-areas: 
         "header header header"
         "hero hero biznes"
@@ -221,8 +226,11 @@ display: none;
         grid-template-columns: auto auto auto;
         grid-template-rows: auto auto;
     }
-    .image{
+    
+    .logo{
         display: block;
+        max-width: 20%;
+        justify-self: center;
     }
     .biznes{
         display:block;
