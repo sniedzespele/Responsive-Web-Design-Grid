@@ -164,7 +164,8 @@ display: none;
         grid-area: hero;
         display: grid;
         grid-template-areas:
-        "image image action";
+        "image image image"
+        "action action action";
         grid-gap: 10px;
         grid-template-columns:3fr 2fr;
         }
