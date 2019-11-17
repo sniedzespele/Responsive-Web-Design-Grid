@@ -190,14 +190,7 @@ display: none;
     display: block;
 }
 }
-@media (min-width: 992px){
-.image{
-    display: block;
-}
-.biznes{
-    display:block;
-}
-}
+
 @media (min-width:  992px){
     .wrapper{
         display: grid;
@@ -229,4 +222,9 @@ display: none;
         grid-template-columns: auto auto auto;
         grid-template-rows: auto auto;
     }
+    .image{
+        display: block;
+    }
+    .biznes{
+        display:block;
 }
