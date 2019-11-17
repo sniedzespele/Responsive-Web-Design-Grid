@@ -1,0 +1,232 @@
+*{ padding: 0;
+margin: 0;
+-webkit-box-sizing: border-box;
+-moz-box-sizing: border-box;
+box-sizing: border-box;
+}
+
+body{
+    background-color: #1c2a2e;
+    font-family: Arial;
+}
+.wrapper{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-areas: 
+    "header header header"
+    "header header header"
+    "header header header"
+    "hero hero hero"
+     "main main main"
+    "footer footer footer";
+    height: auto;
+    border: 5px solid #1de9b6;
+    font-size: 20px;
+    color: #23756a;
+    text-align: center;
+    grid-gap: 20px;
+}
+.header{
+    border:2px solid #386c79;
+    display: grid;
+    grid-template-areas:
+    "brand brand brand"
+    "nav nav tools";
+    grid-template-columns: auto auto auto;
+    grid-gap: 10px;
+    
+    grid-area: header;
+}
+.brand{
+    border:2px solid #386c79;
+    padding:  25px 0;
+    grid-area: brand;
+}
+.nav{
+    border:2px solid #386c79;
+    padding:  25px 0;
+    grid-area: nav;
+    
+}
+.tools{
+    border:2px solid #386c79;
+    padding:  25px 0;
+    grid-area: tools;
+}
+
+.hero{
+    border:2px solid #386c79;
+    grid-area: hero;
+    display: grid;
+    grid-template-areas:
+    "action action action";
+    grid-gap: 10px;
+    grid-template-columns:3fr 2fr;
+    ;
+    
+}
+.image{
+    border:2px solid #386c79;
+    padding:  25px 0;
+    grid-area: image;
+    display: none;
+}
+.action{
+    border:2px solid #386c79;
+    padding:  25px 0;
+    grid-area: action;
+    
+}
+.biznes{
+border:2px solid #386c79;
+padding:  25px 0;
+grid-area: biznes;
+display: none;
+}
+
+.main{
+    border:2px solid #386c79;
+    grid-area: main;
+    display: grid;
+    grid-template-areas:
+    "feature feature feature"
+    "biznes2 biznes2 biznes2"
+     "listing listing listing";
+    grid-gap: 10px;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto auto ;
+    max-width: 100%;
+
+}
+.feature{
+    border:2px solid #386c79;
+    padding:  25px 0;
+    grid-area: feature;
+}
+.biznes2{
+    border:2px solid #386c79;
+    padding:  25px 0;
+    grid-area: biznes2;
+}
+.listing{
+    border:2px solid #386c79;
+    padding:  25px 0;
+    grid-area: listing;
+}
+.sidebar{
+    border:2px solid #386c79;
+    padding:  25px 0;
+    grid-area:  sidebar;
+    display: none;
+}
+.footer{
+    border:2px solid #386c79;
+    padding:  25px 0;
+    grid-area:  footer;
+}
+
+@media (min-width:  576px){
+    .wrapper{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        grid-template-areas: 
+        "header header header"
+        "hero hero hero"
+        ". . biznes2"
+         "main main main"
+         "sidebar sidebar sidebar"
+        "footer footer footer";
+        height: auto;
+        border: 5px solid #1de9b6;
+        font-size: 20px;
+        color: #23756a;
+        text-align: center;
+        grid-gap: 20px;
+    }
+    .header{
+        border:2px solid #386c79;
+        display: grid;
+        grid-template-areas:
+        "brand nav tools";
+        grid-template-columns: auto auto auto;
+        grid-row: row 1;
+        grid-gap: 10px;
+        grid-template-columns: 1fr 3fr 2fr;
+        grid-template-rows: 100px;
+        grid-area: header;
+        max-width: 100%;
+      height: 100px;
+    }
+    .hero{
+        border:2px solid #386c79;
+        grid-area: hero;
+        display: grid;
+        grid-template-areas:
+        "image image action";
+        grid-gap: 10px;
+        grid-template-columns:3fr 2fr;
+        ;}
+        .main{
+            border:2px solid #386c79;
+            grid-area: main;
+            display: grid;
+            grid-template-areas:
+            "feature feature biznes2"
+             "listing listing listing";
+            grid-gap: 10px;
+            grid-template-columns: auto auto auto;
+            grid-template-rows: auto auto;
+        }
+
+.sidebar{
+    display: block;
+}
+.biznes2{
+    display: block;
+}
+.image{
+    display: block;
+}
+}
+@media (min-width: 992px){
+.image{
+    display: block;
+}
+.biznes{
+    display:block;
+}
+}
+@media (min-width:  992px){
+    .wrapper{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        grid-template-areas: 
+        "header header header"
+        "hero hero biznes"
+         "main main sidebar"
+        "footer footer footer";
+        height: auto;
+        border: 5px solid #1de9b6;
+        font-size: 20px;
+        color: #23756a;
+        text-align: center;
+        grid-gap: 20px;
+    }  
+    .biznes2{
+        display: none;
+    } 
+    .main{
+        border:2px solid #386c79;
+        grid-area: main;
+        display: grid;
+        grid-template-areas:
+        "feature listing listing"
+         "feature listing listing";
+        grid-gap: 10px;
+        grid-template-columns: auto auto auto;
+        grid-template-rows: auto auto;
+    }
+}
