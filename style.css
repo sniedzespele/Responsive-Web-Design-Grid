@@ -23,7 +23,7 @@ body{
     font-size: 20px;
     color: #23756a;
     text-align: center;
-    grid-gap: 20px;
+    grid-gap: 10px;
 }
 .header{
     border:2px solid #386c79;
@@ -33,29 +33,60 @@ body{
     "nav nav tools";
     grid-template-columns: auto auto auto;
     grid-gap: 10px;
-    
     grid-area: header;
 }
 .brand{
     border:2px solid #386c79;
-    padding:  25px 0;
     grid-area: brand;
 }
 .logo{
-    display: block;
-    max-width: 20%;
-    justify-self: center;
+    max-width: 25%;
+    text-align: center;
 }
 .nav{
     border:2px solid #386c79;
-    padding:  25px 0;
     grid-area: nav;
+    font-size: 16px;
     
 }
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+  }
+  
+  li {
+    float: left;
+  }
+  
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 10px 10px;
+    text-decoration: none;
+  }
+  
+  li a:hover {
+    background-color: #111;
+  }
 .tools{
     border:2px solid #386c79;
-    padding:  25px 0;
     grid-area: tools;
+}
+.button-search {background-color: #555555;
+    background-color: #555555;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 4px 2px;
+    cursor: pointer;
+    font-size: 10px;
+    border-radius: 12px;
 }
 
 .hero{
@@ -63,23 +94,43 @@ body{
     grid-area: hero;
     display: grid;
     grid-template-areas:
+    "image image image"
     "action action action";
     grid-gap: 10px;
     grid-template-columns:3fr 2fr;
-    ;
-    
+
 }
-.image{
+.barber{
     border:2px solid #386c79;
-    padding:  25px 0;
     grid-area: image;
     display: none;
+}
+.man{
+    width: 100%;
+    height: auto;
+    
 }
 .action{
     border:2px solid #386c79;
     padding:  25px 0;
     grid-area: action;
     
+}
+.action-button{
+    background-color: #555555;
+  border: none;
+  color: white;
+  padding: 10px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  margin: 4px 2px;
+  cursor: pointer;
+  font-size: 14px;
+  border-radius: 12px;
+}
+h2{
+    font-size: 25px;;
 }
 .biznes{
 border:2px solid #386c79;
@@ -128,7 +179,15 @@ display: none;
     padding:  25px 0;
     grid-area:  footer;
 }
-
+.footer-img{
+    display: none;
+}
+.pclass{
+    text-align: center;
+}
+.discount2{
+    max-width: 70%;
+}
 @media (min-width:  576px){
     .wrapper{
         display: grid;
@@ -162,6 +221,13 @@ display: none;
         max-width: 100%;
       height: 100px;
     }
+
+        .logo{
+            max-width: 25%;
+            text-align: center;
+
+        }
+    
     .hero{
         border:2px solid #386c79;
         grid-area: hero;
@@ -172,6 +238,15 @@ display: none;
         grid-gap: 10px;
         grid-template-columns:3fr 2fr;
         }
+        .barber{
+            border:2px solid #386c79;
+            grid-area: image;
+            display: block;
+        }
+        .man{
+            width: 100%;
+            height: auto;}
+
         .main{
             border:2px solid #386c79;
             grid-area: main;
@@ -190,7 +265,9 @@ display: none;
 .biznes2{
     display: block;
 }
-.image{
+.footer-img{
+    max-width: 10%;
+    text-align: center;
     display: block;
 }
 }
@@ -229,10 +306,15 @@ display: none;
     
     .logo{
         display: block;
-        max-width: 20%;
-        justify-self: center;
+        max-width: 30%;
+        float: left;
     }
     .biznes{
         display:block;
 }
+.table {
+	width: 95%;
+    margin: 15px;
+}
+.footer-img{}
 }
