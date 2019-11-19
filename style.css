@@ -46,7 +46,6 @@ body{
 .nav{
     border:2px solid #386c79;
     grid-area: nav;
-    font-size: 16px;
     
 }
 ul {
@@ -129,6 +128,7 @@ ul {
   font-size: 14px;
   border-radius: 12px;
 }
+
 h2{
     font-size: 25px;;
 }
@@ -223,7 +223,7 @@ display: none;
     }
 
         .logo{
-            max-width: 25%;
+            max-width: 100%;
             text-align: center;
 
         }
@@ -305,16 +305,41 @@ display: none;
     }
     
     .logo{
-        display: block;
-        max-width: 30%;
-        float: left;
+        max-width: 45%;
+        text-align: center;
+
     }
     .biznes{
         display:block;
+        
+}
+.discount{
+    max-width: 90%;
 }
 .table {
 	width: 95%;
     margin: 15px;
 }
-.footer-img{}
+ul{
+    border:2px solid #386c79;
+    grid-area: nav;
+    font-size: 25px;}
+
+    .action-button{
+        background-color: #555555;
+      border: none;
+      color: white;
+      padding: 10px 25px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      margin: 4px 2px;
+      cursor: pointer;
+      font-size: 14px;
+      border-radius: 12px;
+      
+    }
+    ;
+        
+    }
 }
