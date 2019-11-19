@@ -51,7 +51,7 @@
     }
     ul {
         list-style-type: none;
-        margin: 0;
+        margin: 20px;
         padding: 0;
         overflow: hidden;
       }
@@ -72,8 +72,9 @@
         background-color: #111;
       }
     .tools{
-     
         grid-area: tools;
+            margin: 20px;
+        
     }
     .button-search {
         background-color: #555555;
@@ -154,7 +155,6 @@
     
     }
     .feature{
-        border:2px solid #386c79;
         padding:  25px 0;
         grid-area: feature;
     }
@@ -223,8 +223,10 @@
         }
     
             .logo{
-                max-width: 25%;
-                text-align: center;
+                display: block;
+                max-width: 50px;
+                float: left;
+                margin: 10px 0px 0px 20px;
     
             }
         
@@ -276,13 +278,17 @@
     h1{
         font-size: 30px;
     }
+    
+    .discount2{
+        max-width: 90%;
     }
+}
     
     @media (min-width:  992px){
         .wrapper{
             display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            grid-template-rows:1fr;
+            grid-template-columns: repeat(3, 1fr );
+            grid-template-rows: 75px 2fr 4fr 75px;
             grid-template-areas: 
             "header header header"
             "hero hero biznes"
@@ -314,6 +320,7 @@
             display: block;
             max-width: 30%;
             float: left;
+            margin: 10px 0px 0px 20px;
         }
         .biznes{
             display:block;
