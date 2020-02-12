@@ -135,7 +135,7 @@
     }
     .biznes{
     border:2px solid #386c79;
-    padding:  25px 0;
+    padding:  25px 0px 0px 0px;
     grid-area: biznes;
     display: none;
     }
@@ -155,12 +155,12 @@
     
     }
     .feature{
-        padding:  25px 0;
+        padding:  25px 0px 0px 0px;
         grid-area: feature;
     }
     .biznes2{
         
-        padding:  25px 0;
+        padding:  25px 0px 0px 0px;
         grid-area: biznes2;
     }
     .listing{
@@ -329,5 +329,7 @@
         width: 95%;
         margin: 15px;
     }
-    
+    .discount{
+        max-width: 90%;
+    }
     }
